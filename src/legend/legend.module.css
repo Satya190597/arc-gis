@@ -1,0 +1,70 @@
+.legendContainerMain {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    max-height: 500px;
+    max-width: 350px;
+    min-width: 350px;
+}
+.legendContainer {
+    margin-top: 10px;
+    min-width: 350px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    align-self: flex-start;
+}
+.legendButton {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.legendTitle {
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+}
+.legendIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.scroll {
+    background-color: red;
+}
+
+.legendContainer::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+.legendContainer::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+.legendContainer::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+.legendContainer::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
